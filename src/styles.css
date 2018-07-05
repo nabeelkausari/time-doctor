@@ -1,9 +1,6 @@
 body {
   background: #F9F9F9;
 }
-*:focus {
-  outline: 0 !important;
-}
 
 .header {
   color: #5A677B;
@@ -121,4 +118,31 @@ body {
 
 .editWidget {
   width: 75%;
+}
+
+.addWidget {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.details {
+  padding: 10px 30px;
+}
+
+.details b,
+.details p {
+  color: #647fac;
+}
+
+.details h6 {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.activity-img {
+  width: 30%;
+}
+
+.activity-img img {
+  width: 100%;
 }

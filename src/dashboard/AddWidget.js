@@ -2,6 +2,8 @@ import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, ListGroup, ListGroupItem } from 'reactstrap';
 import WidgetsContainer from './WidgetsContainer';
 
+import ActivityImg from '../assets/users activity widget picture.png'
+
 class AddWidget extends React.Component {
   state = {
     modal: false,
@@ -35,12 +37,21 @@ class AddWidget extends React.Component {
     return (
       <div>
         <Button color="primary" onClick={this.toggle}>Add Widget</Button>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <Modal size="lg" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Add a widget</ModalHeader>
           <ModalBody>
             <ListGroup>
               <ListGroupItem>
-                User's Activity
+                <div className="addWidget">
+                  <div className="activity-img">
+                    <img src={ActivityImg}/>
+                  </div>
+                  <div className="details">
+                    <h6>User's Activity</h6>
+                    <b>By TimeDoctor</b>
+                    <p>User's who worked more or less than their minimum hours required in daily, weekly and monthly.</p>
+                  </div>
+                </div>
                 {
                   this.state.addButtonVisible
                     ? <Button color="primary" onClick={this.addUsersWidget}>+ Add Widget</Button>
@@ -50,8 +61,8 @@ class AddWidget extends React.Component {
             </ListGroup>
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.save}>Save</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+            <Button color="secondary" onClick={this.toggle}>Cancel</Button>{' '}
+            <Button color="primary" onClick={this.save}>Save</Button>
           </ModalFooter>
         </Modal>
       </div>
