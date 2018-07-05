@@ -146,3 +146,14 @@ body {
 .activity-img img {
   width: 100%;
 }
+
+.add-widget-btn {
+  background-color: #677BA6;
+  border: 0;
+}
+
+.add-widget-btn:active,
+.add-widget-btn:focus,
+.add-widget-btn:hover {
+  background-color: #445376 !important;
+}

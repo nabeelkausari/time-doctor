@@ -3,6 +3,8 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter, ListGroup, ListGrou
 import WidgetsContainer from './WidgetsContainer';
 
 import ActivityImg from '../assets/users activity widget picture.png'
+import addImg from '../assets/addwidget - icon.svg'
+import removeImg from '../assets/Removewidget - icon.svg'
 
 class AddWidget extends React.Component {
   state = {
@@ -36,7 +38,7 @@ class AddWidget extends React.Component {
   render() {
     return (
       <div>
-        <Button color="primary" onClick={this.toggle}>Add Widget</Button>
+        <Button className="add-widget-btn" color="primary" onClick={this.toggle}><img src={addImg}/>Add Widget</Button>
         <Modal size="lg" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Add a widget</ModalHeader>
           <ModalBody>
@@ -54,8 +56,8 @@ class AddWidget extends React.Component {
                 </div>
                 {
                   this.state.addButtonVisible
-                    ? <Button color="primary" onClick={this.addUsersWidget}>+ Add Widget</Button>
-                    : <Button color="danger" onClick={this.removeUsersWidget}>- Remove Widget</Button>
+                    ? <Button className="add-widget-btn" color="primary" onClick={this.addUsersWidget}><img src={addImg}/>Add Widget</Button>
+                    : <Button color="danger" onClick={this.removeUsersWidget}><img src={removeImg}/>Remove Widget</Button>
                 }
               </ListGroupItem>
             </ListGroup>
