@@ -6,13 +6,11 @@ import { editWidget } from './actions';
 
 class EditWidgetForm extends Component {
   handleFormSubmit = props => {
-    console.log(props)
     this.props.editWidget(props);
     this.props.toggle();
   }
 
   render() {
-    console.log(this.props)
     const { handleSubmit, cancelAction } = this.props;
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit)}>
@@ -90,6 +88,3 @@ const editForm = reduxForm({
 })(EditWidgetForm);
 
 export default connect(mapStateToProps, { editWidget })(editForm)
-
-// const editForm = connect(mapStateToProps, { editWidget })(EditWidgetForm)
-// export default reduxForm({ form: 'editWidget' })(editForm);

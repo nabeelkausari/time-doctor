@@ -4,7 +4,7 @@ import {
 import data from '../data.json';
 
 export const loadData = () => dispatch => {
-  dispatch({ type: LOAD_DATA, payload: data })
+  dispatch({ type: LOAD_DATA, payload: { data } })
 }
 
 export const changePosition = payload => {
