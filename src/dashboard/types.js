@@ -1,0 +1,3 @@
+export const CHANGE_POSITION = "CHANGE_POSITION";
+export const SHOW_USERS_WIDGET = "SHOW_USERS_WIDGET";
+export const LOAD_DATA = "LOAD_DATA"

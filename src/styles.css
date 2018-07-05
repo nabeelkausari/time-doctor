@@ -1,0 +1,10 @@
+.holder {
+  height: 100px;
+  padding: 5px;
+  background: #eee;
+  margin: 5px;
+}
+
+.highlight {
+  background: yellow;
+}
