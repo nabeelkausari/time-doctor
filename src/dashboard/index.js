@@ -6,11 +6,13 @@ import AddWidget from './AddWidget'
 export default class App extends Component {
   render() {
     return (
-      <Container>
+      <Container className="dashboard">
         <Row>
           <Col>
-            <h1>Team Dashboard</h1>
-            <AddWidget/>
+            <div className="header">
+              <h3>Team Dashboard</h3>
+              <AddWidget/>
+            </div>
             <WidgetsContainer/>
           </Col>
         </Row>

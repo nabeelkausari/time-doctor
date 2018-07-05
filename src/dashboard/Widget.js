@@ -38,7 +38,7 @@ class Widget extends Component {
     const data = this.filterData()
     return connectDragSource(
       <div style={{
-        opacity: isDragging ? 0.5 : 1,
+        opacity: isDragging ? 0.1 : 1,
         fontSize: 25,
         fontWeight: 'bold',
         cursor: 'move',

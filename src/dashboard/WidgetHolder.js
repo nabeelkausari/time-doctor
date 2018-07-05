@@ -5,10 +5,11 @@ function collect(connect, monitor) {
   return {
     connectDropTarget: connect.dropTarget(),
     isOver: monitor.isOver(),
+    canDrop: monitor.canDrop(),
   };
 }
 
-const squareTarget = {
+const holderTarget = {
   drop(props, monitor) {
     props.changePosition(props.currentPosition);
   }
@@ -16,14 +17,15 @@ const squareTarget = {
 
 class WidgetHolder extends Component {
   render() {
-    const {connectDropTarget, isOver, isDragging } = this.props;
+    const {connectDropTarget, isOver, canDrop, currentPosition, widgetPosition } = this.props;
     return connectDropTarget(
-      <div className={"col-md-3 mb-4 holder " + (isOver ? "highlight" : "")}>
-        {isDragging && <h4>Drop Here</h4>}
+      <div className={"col-md mb-2 holder " + (canDrop ? "visible " : "") + (isOver ? "highlight " : "") }>
+        {canDrop && !(currentPosition === widgetPosition) && <h4 className="drop-here">Drop Here</h4>}
+        {canDrop && (currentPosition === widgetPosition) && <h4 className="drop-here">Put Back Here</h4>}
         {this.props.children}
       </div>
     )
   }
 }
 
-export default DropTarget('widget', squareTarget, collect)(WidgetHolder)
+export default DropTarget('widget', holderTarget, collect)(WidgetHolder)

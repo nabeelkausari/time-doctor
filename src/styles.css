@@ -1,10 +1,42 @@
-.holder {
-  height: 100px;
-  padding: 5px;
-  background: #eee;
-  margin: 5px;
+body {
+  background: #F9F9F9;
 }
 
-.highlight {
-  background: yellow;
+.header {
+  color: #5A677B;
+  margin-bottom: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard {
+  margin-top: 50px;
+}
+
+.holder {
+  height: 300px;
+  padding: 5px;
+  background: transparent;
+  margin: 5px;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+
+.holder.visible {
+  border: 2px dashed #d7d8d8;
+}
+
+.holder.highlight {
+  border: 2px dashed #5A677B;
+}
+
+.drop-here {
+  font-size: 14px;
+  color: #6a90bd;
+  position: absolute;
+  left: 40%;
+  top: 45%;
+  z-index: 1;
 }
