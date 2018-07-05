@@ -5,8 +5,8 @@ import WidgetsContainer from './WidgetsContainer';
 class AddWidget extends React.Component {
   state = {
     modal: false,
-    showUsersWidget: true,
-    addButtonVisible: true
+    showUsersWidget: undefined,
+    addButtonVisible: !this.props.usersWidgetVisible
   }
 
   addUsersWidget = () => {

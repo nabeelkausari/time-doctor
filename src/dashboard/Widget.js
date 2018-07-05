@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
-import { Card, CardBody, CardTitle } from 'reactstrap';
+import { Card, CardBody, CardTitle, CardHeader } from 'reactstrap';
 import { DragSource } from 'react-dnd';
+
+import DropDown from './DropDown';
+import EditWidget from './EditWidget';
 
 const widgetSource = {
   beginDrag(props) {
@@ -26,11 +29,16 @@ class Widget extends Component {
         fontWeight: 'bold',
         cursor: 'move'
       }}>
-        <Card>
+        <Card size="sm">
+          <CardHeader>
+            Users activity
+            <span className="float-right"><DropDown/></span>
+          </CardHeader>
           <CardBody>
             <CardTitle>Hello</CardTitle>
           </CardBody>
         </Card>
+        <EditWidget/>
       </div>
     );
   }
