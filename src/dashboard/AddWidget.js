@@ -25,6 +25,12 @@ class AddWidget extends React.Component {
     this.props.showUsersWidget(this.state.showUsersWidget)
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.usersWidgetVisible && this.props.usersWidgetVisible !== prevProps.usersWidgetVisible) {
+      this.setState({ addButtonVisible: !this.props.usersWidgetVisible })
+    }
+  }
+
   render() {
     return (
       <div>

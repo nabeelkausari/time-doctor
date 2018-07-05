@@ -14,10 +14,11 @@ class EditWidgetForm extends Component {
     const { handleSubmit, cancelAction } = this.props;
     return (
       <form onSubmit={handleSubmit(this.handleFormSubmit)}>
-        <ModalBody>
+        <ModalBody className="editWidget">
           <fieldset className="form-group">
             <div>
-              <Field name="numberOfUsers" component="select">
+              <label>Number of Users</label>
+              <Field className="form-control" name="numberOfUsers" component="select">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -30,38 +31,45 @@ class EditWidgetForm extends Component {
             <div className="row">
               <div className="col-md-12">
                 <div className="form-group">
+                  <label>Activity</label>
                   <div>
-                    <label>
+                    <div className="form-check form-check-inline">
                       <Field
+                        className="form-check-input"
                         name="activity"
                         component="input"
                         type="radio"
                         value="highest"
+                        id="highest"
                       />{' '}
-                      Highest
-                    </label>
-                    <label>
+                      <label className="form-check-label" htmlFor="highest">Highest</label>
+                    </div>
+                    <div className="form-check form-check-inline">
                       <Field
+                        className="form-check-input"
                         name="activity"
                         component="input"
                         type="radio"
                         value="lowest"
+                        id="lowest"
                       />{' '}
-                      Lowest
-                    </label>
+                      <label className="form-check-label" htmlFor="lowest">Lowest</label>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </fieldset>
-          <fieldset>
-            <select defaultValue="1">
+          <fieldset className="form-group">
+            <label>Time</label>
+            <select className="form-control" defaultValue="1">
               <option />
               <option value="1">Mobile Time</option>
             </select>
           </fieldset>
-          <fieldset>
-            <select defaultValue="1">
+          <fieldset className="form-group">
+            <label>Date</label>
+            <select className="form-control" defaultValue="1">
               <option />
               <option value="1">Weekly</option>
             </select>

@@ -6,7 +6,7 @@ import { DragSource } from 'react-dnd';
 
 import DropDown from './DropDown';
 import EditWidget from './EditWidget';
-import { loadData } from "./actions"
+import { loadData, showUsersWidget } from "./actions"
 
 import downArrow from '../assets/Arrowdown - icon - selected.svg';
 import avatar1 from '../assets/user avatar 1.png';
@@ -67,7 +67,7 @@ class Widget extends Component {
             <span className="title">Users activity</span>
             <div>
               <span className="weekly">Weekly <img src={downArrow}/></span>
-              <span className="more"><DropDown/></span>
+              <span className="more"><DropDown deleteWidget={this.props.showUsersWidget}/></span>
             </div>
           </CardHeader>
           <CardBody>
@@ -94,5 +94,5 @@ class Widget extends Component {
 }
 
 export default DragSource('widget', widgetSource, collect)(
-  connect(state => ({ ...state.data }), { loadData })(Widget)
+  connect(state => ({ ...state.data }), { loadData, showUsersWidget })(Widget)
 );

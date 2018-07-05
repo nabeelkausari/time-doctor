@@ -118,3 +118,7 @@ body {
   border-radius: 0;
   height: 10px;
 }
+
+.editWidget {
+  width: 75%;
+}

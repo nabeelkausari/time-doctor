@@ -2,7 +2,7 @@ import React from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import EditWidget from './EditWidget';
 
-export default class Example extends React.Component {
+export default class DropDown extends React.Component {
   constructor(props) {
     super(props);
 
@@ -27,7 +27,7 @@ export default class Example extends React.Component {
         <DropdownToggle/>
         <DropdownMenu>
           <DropdownItem onClick={this.showEdit}>Edit Widget</DropdownItem>
-          <DropdownItem>Delete Widget</DropdownItem>
+          <DropdownItem onClick={() => this.props.deleteWidget(false)}>Delete Widget</DropdownItem>
         </DropdownMenu>
         <EditWidget toggle={this.showEdit} modal={this.state.editVisible}/>
       </Dropdown>
