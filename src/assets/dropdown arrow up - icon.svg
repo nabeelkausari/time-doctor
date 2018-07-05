@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>dropdown arrow up - icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-363.000000, -89.000000)"></g>
+        <g id="dropdown-arrow-up---icon" fill="#77909D">
+            <path d="M20.2844256,13 C20.5374028,13 20.7144868,13.325 20.5121051,13.55 L16.1355999,18.85 C15.9838136,19.05 15.6549433,19.05 15.503157,18.85 L11.0760564,13.55 C10.8989724,13.325 11.0507587,13 11.3290336,13 L20.2844256,13 Z" id="down" transform="translate(15.800000, 16.000000) rotate(-180.000000) translate(-15.800000, -16.000000) "></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="32px" viewBox="0 0 80 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>savebutton - web - default</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-56.000000, -343.000000)"></g>
+        <g id="savebutton---web---default">
+            <g id="save-button---default---web">
+                <g id="Done-button">
+                    <rect id="Rectangle" fill="#657FAC" x="0" y="0" width="80" height="32" rx="5"></rect>
+                    <text id="Save" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="37" y="20">Save</tspan>
+                    </text>
+                </g>
+                <g id="ui-24px-outline-1_check-circle-07" transform="translate(10.000000, 8.000000)" stroke="#FFFFFF">
+                    <path d="M15.76,5.92 C15.92,6.56 16,7.28 16,8 C16,12.4 12.4,16 8,16 C3.6,16 0,12.4 0,8 C0,3.6 3.6,0 8,0 C9.52,0 10.96,0.4 12.24,1.2" id="Shape"></path>
+                    <polyline id="Shape" stroke-linecap="square" points="4.8 6.4 8 9.6 16.8 0.8"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

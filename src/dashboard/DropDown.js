@@ -24,9 +24,7 @@ export default class Example extends React.Component {
   render() {
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle>
-          ...
-        </DropdownToggle>
+        <DropdownToggle/>
         <DropdownMenu>
           <DropdownItem onClick={this.showEdit}>Edit Widget</DropdownItem>
           <DropdownItem>Delete Widget</DropdownItem>

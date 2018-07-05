@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="32px" viewBox="0 0 80 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>cancelbutton - web - hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-153.000000, -288.000000)"></g>
+        <g id="cancelbutton---web---hover">
+            <g id="cancel---edittask---hover---web">
+                <g>
+                    <g id="popupcancel-button">
+                        <rect id="Rectangle" fill="#77909D" x="0" y="0" width="80" height="32" rx="5"></rect>
+                        <text id="Cancel" font-family="Roboto-Regular, Roboto" font-size="12" font-weight="normal" fill="#FFFFFF">
+                            <tspan x="32.2451172" y="20">Cancel</tspan>
+                        </text>
+                    </g>
+                    <g id="ui-24px-outline-2_small-remove" transform="translate(10.000000, 10.000000)" stroke="#FFFFFF" stroke-linecap="square">
+                        <path d="M12,0 L0,12" id="Shape"></path>
+                        <path d="M12,12 L0,0" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

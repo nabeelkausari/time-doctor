@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Mywidget - icon - default</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-176.000000, -194.000000)"></g>
+        <g id="Mywidget---icon---default" stroke-linecap="square" stroke="#444444">
+            <g id="mywidgets---icon---normal---web" transform="translate(11.000000, 9.000000)">
+                <g id="Shape">
+                    <path d="M5.90909091,6.36363636 L5.90909091,6.36363636 C4.50336364,6.36363636 3.36363636,5.22390909 3.36363636,3.81818182 L3.36363636,2.54545455 C3.36363636,1.13972727 4.50336364,0 5.90909091,0 L5.90909091,0 C7.31481818,0 8.45454545,1.13972727 8.45454545,2.54545455 L8.45454545,3.81818182 C8.45454545,5.22390909 7.31481818,6.36363636 5.90909091,6.36363636 Z"></path>
+                    <path d="M11,14 L0.818181818,14 L0.818181818,11.382 C0.818181818,10.5884545 1.305,9.87827273 2.047,9.597 C2.92963636,9.26227273 4.25390909,8.90909091 5.90909091,8.90909091 C7.56427273,8.90909091 8.88854545,9.26227273 9.77118182,9.597 C10.5131818,9.87763636 11,10.5884545 11,11.382 L11,14 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

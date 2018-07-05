@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>addwidget - icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-276.000000, -144.000000)"></g>
+        <g id="addwidget---icon" stroke-linecap="square" stroke="#FFFFFF" stroke-width="2">
+            <g id="addtime---manually---list-view" transform="translate(10.000000, 10.000000)">
+                <path d="M6,0 L6,12" id="Shape"></path>
+                <path d="M12,6 L0,6" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

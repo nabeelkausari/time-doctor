@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Widgetdirectory - icon - selected</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-217.000000, -144.000000)"></g>
+        <g id="Widgetdirectory---icon---selected" stroke-linecap="square" stroke="#657FAC">
+            <g id="widgetdirectory---icon---selected---web" transform="translate(10.000000, 10.000000)">
+                <g id="widgetdirectory---icon---normal---web">
+                    <rect id="Rectangle-path" x="1.09090909" y="0" width="10.9090909" height="12"></rect>
+                    <path d="M0,6 L2.18181818,6" id="Shape"></path>
+                    <path d="M0,3.27272727 L2.18181818,3.27272727" id="Shape"></path>
+                    <path d="M0,8.72727273 L2.18181818,8.72727273" id="Shape"></path>
+                    <rect id="Rectangle-path" x="4.90909091" y="4.36363636" width="4.36363636" height="3.27272727"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

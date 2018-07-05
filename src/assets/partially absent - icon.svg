@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.1 (44463) - http://www.bohemiancoding.com/sketch -->
+    <title>partially absent - icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10" cy="10" r="10"></circle>
+        <path d="M2.1953125,7.8828125 L0.3203125,7.8828125 L0.0546875,0 L2.4609375,0 L2.1953125,7.8828125 Z M1.2578125,9.1171875 C1.63802273,9.1171875 1.94400926,9.22916555 2.17578125,9.453125 C2.40755324,9.67708445 2.5234375,9.96353992 2.5234375,10.3125 C2.5234375,10.6562517 2.40755324,10.940103 2.17578125,11.1640625 C1.94400926,11.388022 1.63802273,11.5 1.2578125,11.5 C0.882810625,11.5 0.579428242,11.388022 0.34765625,11.1640625 C0.115884258,10.940103 0,10.6562517 0,10.3125 C0,9.96874828 0.115884258,9.68359488 0.34765625,9.45703125 C0.579428242,9.23046762 0.882810625,9.1171875 1.2578125,9.1171875 Z" id="path-3"></path>
+    </defs>
+    <g id="screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Worked-more/less-than-minimum-hours" transform="translate(-857.000000, -1003.000000)">
+            <g id="partially-absent---icon" transform="translate(857.000000, 1003.000000)">
+                <g id="Rectangle-11">
+                    <g>
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <circle stroke="#D8DDE6" cx="10" cy="10" r="9.5"></circle>
+                        <polygon fill="#EE352E" mask="url(#mask-2)" points="3.14213562 -11 17.2842712 3.14213562 3.14213562 17.2842712 -11 3.14213562"></polygon>
+                    </g>
+                    <g transform="translate(9.000000, 4.000000)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#FFFFFF" xlink:href="#path-3"></use>
+                        <polygon fill="#EE352E" mask="url(#mask-4)" points="8.2647294 -0.87522374 22.2842712 13.1421356 8.14213562 27.2842712 -5.87740622 13.2669119"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Removewidget - icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Assets" transform="translate(-276.000000, -89.000000)"></g>
+        <g id="Removewidget---icon" stroke-linecap="square" stroke="#FFFFFF">
+            <g id="Remove-widget" transform="translate(8.000000, 7.000000)">
+                <polyline id="Shape" points="13.8181818 3.90909091 13.8181818 17 2.18181818 17 2.18181818 3.90909091"></polyline>
+                <path d="M0,3.66666667 L16,3.66666667" id="Shape"></path>
+                <path d="M8,8.27272727 L8,12.6363636" id="Shape"></path>
+                <path d="M5,8.27272727 L5,12.6363636" id="Shape"></path>
+                <path d="M10.6666667,8.27272727 L10.6666667,12.6363636" id="Shape"></path>
+                <polyline id="Shape" points="5.09090909 2.90909091 5.09090909 0 10.9090909 0 10.9090909 2.90909091"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

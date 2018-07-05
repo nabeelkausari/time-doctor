@@ -1,6 +1,9 @@
 body {
   background: #F9F9F9;
 }
+*:focus {
+  outline: 0 !important;
+}
 
 .header {
   color: #5A677B;
@@ -15,7 +18,7 @@ body {
 }
 
 .holder {
-  height: 300px;
+  height: 255px;
   padding: 5px;
   background: transparent;
   margin: 5px;
@@ -39,4 +42,79 @@ body {
   left: 40%;
   top: 45%;
   z-index: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.card-header .title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5A677B;
+}
+.card-header > div {
+  display: flex;
+  align-items: flex-start;
+  height: 24px;
+}
+
+.weekly {
+  color: #647fac;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.weekly img {
+  margin-left: -8px;
+}
+
+.more .dropdown > button {
+  background: url("./assets/Settings - icon - default.svg");
+  background-position-y: -8px;
+  height: 30px;
+  border: 0;
+  padding: 0 10px;
+}
+
+.more .dropdown > button:focus {
+  box-shadow: none !important;
+}
+
+.more .dropdown > button:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.list-group-item {
+  padding: 0.05rem .25rem;
+  border: 0;
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 10px;
+}
+
+.username {
+  text-align: left;
+  flex: 1;
+}
+
+.progress-holder {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.progress-holder .progress {
+  flex: 1;
+  margin-right: 10px;
+  border-radius: 0;
+  height: 10px;
 }
