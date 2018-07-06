@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
 
-import Widgets from './widgets';
-import AddWidget from './addWidget';
+import Widgets from './widgets/index';
+import AddWidget from './widgets/addWidget';
 
 export default class Dashboard extends Component {
   render() {

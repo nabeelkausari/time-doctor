@@ -1,10 +1,7 @@
-import React, { Component } from 'react';
-import { orderBy } from 'lodash';
+import React from 'react';
 import { Card, CardBody, CardHeader, ListGroup, ListGroupItem, Progress } from 'reactstrap';
-import { DragSource } from 'react-dnd';
 
 import DropDown from './DropDown';
-import EditWidget from './EditWidget';
 
 import downArrow from '../assets/Arrowdown - icon - selected.svg';
 import avatar1 from '../assets/user avatar 1.png';
@@ -24,71 +21,33 @@ const avatars = {
   "194893": avatar2
 }
 
-const widgetSource = {
-  beginDrag(props) {
-    return {};
-  }
+export default ({ data, showUsersWidget }) => {
+  if (!data) return null;
+  return (
+    <Card size="sm" style={{ zIndex: 2 }}>
+      <CardHeader>
+        <span className="title">Users activity</span>
+        <div>
+          <span className="weekly">Weekly <img alt="Down Arrow" src={downArrow}/></span>
+          <span className="more"><DropDown deleteWidget={showUsersWidget}/></span>
+        </div>
+      </CardHeader>
+      <CardBody>
+        <ListGroup>
+          {data.map(user => (
+            <ListGroupItem key={user.id}>
+              <div className="avatar">
+                <img alt={user.name} src={avatars[user.id]}/>
+              </div>
+              <div className="username">{user.name} {user.lastname}</div>
+              <div className="progress-holder">
+                <Progress color="success" value={Math.round(user.weekly)}/>
+                <div className="text-center">{Math.round(user.weekly)}%</div>
+              </div>
+            </ListGroupItem>
+          ))}
+        </ListGroup>
+      </CardBody>
+    </Card>
+  );
 };
-
-function collect(connect, monitor) {
-  return {
-    connectDragSource: connect.dragSource(),
-    connectDragPreview: connect.dragPreview(),
-    isDragging: monitor.isDragging()
-  }
-}
-
-class UsersWidget extends Component {
-  componentDidMount() {
-    this.props.loadData()
-  }
-  filterData = () => {
-    const { data: { users, weekly }, editData } = this.props;
-    let combinedData = users.map(user => ({ ...user, weekly: weekly[user.id] }))
-    let sortedUsers = orderBy(combinedData, 'weekly', editData.activity === "highest" ? "desc" : "asc")
-    return sortedUsers.slice(0, editData.numberOfUsers)
-  }
-  render() {
-    if (!this.props.data) return null;
-    const { connectDragSource, isDragging } = this.props;
-    const data = this.filterData()
-    return connectDragSource(
-      <div style={{
-        opacity: isDragging ? 0.1 : 1,
-        fontSize: 25,
-        fontWeight: 'bold',
-        cursor: 'move',
-        zIndex: 1
-      }}>
-        <Card size="sm" style={{ zIndex: 2 }}>
-          <CardHeader>
-            <span className="title">Users activity</span>
-            <div>
-              <span className="weekly">Weekly <img alt="Down Arrow" src={downArrow}/></span>
-              <span className="more"><DropDown deleteWidget={this.props.showUsersWidget}/></span>
-            </div>
-          </CardHeader>
-          <CardBody>
-            <ListGroup>
-              {data.map(user => (
-                <ListGroupItem key={user.id}>
-                  <div className="avatar">
-                    <img alt={user.name} src={avatars[user.id]}/>
-                  </div>
-                  <div className="username">{user.name} {user.lastname}</div>
-                  <div className="progress-holder">
-                    <Progress color="success" value={Math.round(user.weekly)}/>
-                    <div className="text-center">{Math.round(user.weekly)}%</div>
-                  </div>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </CardBody>
-        </Card>
-        <EditWidget/>
-      </div>
-    );
-  }
-}
-
-export default DragSource('widget', widgetSource, collect)(UsersWidget);

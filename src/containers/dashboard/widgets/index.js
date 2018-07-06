@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { DragDropContext } from 'react-dnd';
 import HTML5Backend from 'react-dnd-html5-backend';
 
-import WidgetHolder from './WidgetHolder';
-import UsersWidget from './UsersWidget';
+import { loadData, showUsersWidget, changePosition } from "../actions";
+import WidgetHolder from '../../../components/WidgetHolder';
+import UsersWidget from './usersWidget';
 
 class Widgets extends Component {
   render() {
@@ -28,4 +30,7 @@ class Widgets extends Component {
   }
 }
 
-export default DragDropContext(HTML5Backend)(Widgets);
+export default DragDropContext(HTML5Backend)(connect(
+  ({ data }) => ({ ...data }),
+  { loadData, showUsersWidget, changePosition }
+)(Widgets));
