@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
 import { orderBy } from 'lodash';
 import { Card, CardBody, CardHeader, ListGroup, ListGroupItem, Progress } from 'reactstrap';
 import { DragSource } from 'react-dnd';
 
-import DropDown from './DropDown';
+import DropDown from '../DropDown';
 import EditWidget from './EditWidget';
-import { loadData, showUsersWidget } from "./actions"
 
-import downArrow from '../assets/Arrowdown - icon - selected.svg';
-import avatar1 from '../assets/user avatar 1.png';
-import avatar2 from '../assets/User Avatar 2.png';
-import avatar3 from '../assets/User Avatar 3.png';
-import avatar4 from '../assets/User Avatar 4.png';
-import avatar5 from '../assets/User Avatar 5.png';
+import downArrow from '../../assets/Arrowdown - icon - selected.svg';
+import avatar1 from '../../assets/user avatar 1.png';
+import avatar2 from '../../assets/User Avatar 2.png';
+import avatar3 from '../../assets/User Avatar 3.png';
+import avatar4 from '../../assets/User Avatar 4.png';
+import avatar5 from '../../assets/User Avatar 5.png';
 
 const avatars = {
   "194888": avatar1,
@@ -93,6 +91,4 @@ class Widget extends Component {
   }
 }
 
-export default DragSource('widget', widgetSource, collect)(
-  connect(state => ({ ...state.data }), { loadData, showUsersWidget })(Widget)
-);
+export default DragSource('widget', widgetSource, collect)(Widget);

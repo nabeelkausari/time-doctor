@@ -1,6 +1,6 @@
 import React from 'react';
 import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
-import EditWidget from './EditWidget';
+import EditWidget from './widgets/EditWidget';
 
 export default class DropDown extends React.Component {
   constructor(props) {

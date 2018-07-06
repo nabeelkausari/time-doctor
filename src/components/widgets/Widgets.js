@@ -4,7 +4,6 @@ import HTML5Backend from 'react-dnd-html5-backend';
 
 import WidgetHolder from './WidgetHolder';
 import Widget from './Widget';
-import WidgetsContainer from './WidgetsContainer';
 
 class Widgets extends Component {
   render() {
@@ -19,7 +18,7 @@ class Widgets extends Component {
           <div key={i} className="row">
             {row.map((position) => (
               <WidgetHolder key={position} currentPosition={position} {...this.props}>
-                { usersWidgetVisible && position === widgetPosition && <Widget/>}
+                { usersWidgetVisible && position === widgetPosition && <Widget {...this.props} />}
               </WidgetHolder>
             ))}
           </div>
@@ -29,4 +28,4 @@ class Widgets extends Component {
   }
 }
 
-export default DragDropContext(HTML5Backend)(WidgetsContainer(Widgets));
+export default DragDropContext(HTML5Backend)(Widgets);

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { reduxForm, Field } from 'redux-form';
 import { Button, ModalBody, ModalFooter } from 'reactstrap';
 import { connect } from 'react-redux';
-import { editWidget } from './actions';
+import { editWidget } from '../../containers/dashboard/actions';
 
 class EditWidgetForm extends Component {
   handleFormSubmit = props => {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
-import store from './store';
-import Dashboard from './dashboard';
+import store from './config/store';
+import Dashboard from './containers/dashboard';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -12,5 +12,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

@@ -1,10 +1,9 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, ListGroup, ListGroupItem } from 'reactstrap';
-import WidgetsContainer from './WidgetsContainer';
 
-import ActivityImg from '../assets/users activity widget picture.png'
-import addImg from '../assets/addwidget - icon.svg'
-import removeImg from '../assets/Removewidget - icon.svg'
+import ActivityImg from '../../assets/users activity widget picture.png'
+import addImg from '../../assets/addwidget - icon.svg'
+import removeImg from '../../assets/Removewidget - icon.svg'
 
 class AddWidget extends React.Component {
   state = {
@@ -72,4 +71,4 @@ class AddWidget extends React.Component {
   }
 }
 
-export default WidgetsContainer(AddWidget);
+export default AddWidget;
