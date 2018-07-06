@@ -3,15 +3,15 @@ import { orderBy } from 'lodash';
 import { Card, CardBody, CardHeader, ListGroup, ListGroupItem, Progress } from 'reactstrap';
 import { DragSource } from 'react-dnd';
 
-import DropDown from '../DropDown';
+import DropDown from './DropDown';
 import EditWidget from './EditWidget';
 
-import downArrow from '../../assets/Arrowdown - icon - selected.svg';
-import avatar1 from '../../assets/user avatar 1.png';
-import avatar2 from '../../assets/User Avatar 2.png';
-import avatar3 from '../../assets/User Avatar 3.png';
-import avatar4 from '../../assets/User Avatar 4.png';
-import avatar5 from '../../assets/User Avatar 5.png';
+import downArrow from '../assets/Arrowdown - icon - selected.svg';
+import avatar1 from '../assets/user avatar 1.png';
+import avatar2 from '../assets/User Avatar 2.png';
+import avatar3 from '../assets/User Avatar 3.png';
+import avatar4 from '../assets/User Avatar 4.png';
+import avatar5 from '../assets/User Avatar 5.png';
 
 const avatars = {
   "194888": avatar1,
@@ -38,7 +38,7 @@ function collect(connect, monitor) {
   }
 }
 
-class Widget extends Component {
+class UsersWidget extends Component {
   componentDidMount() {
     this.props.loadData()
   }
@@ -64,7 +64,7 @@ class Widget extends Component {
           <CardHeader>
             <span className="title">Users activity</span>
             <div>
-              <span className="weekly">Weekly <img src={downArrow}/></span>
+              <span className="weekly">Weekly <img alt="Down Arrow" src={downArrow}/></span>
               <span className="more"><DropDown deleteWidget={this.props.showUsersWidget}/></span>
             </div>
           </CardHeader>
@@ -73,7 +73,7 @@ class Widget extends Component {
               {data.map(user => (
                 <ListGroupItem key={user.id}>
                   <div className="avatar">
-                    <img src={avatars[user.id]}/>
+                    <img alt={user.name} src={avatars[user.id]}/>
                   </div>
                   <div className="username">{user.name} {user.lastname}</div>
                   <div className="progress-holder">
@@ -91,4 +91,4 @@ class Widget extends Component {
   }
 }
 
-export default DragSource('widget', widgetSource, collect)(Widget);
+export default DragSource('widget', widgetSource, collect)(UsersWidget);

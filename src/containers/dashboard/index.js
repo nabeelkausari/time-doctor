@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import { connect } from 'react-redux';
 
-import { loadData, showUsersWidget, editWidget, changePosition } from "./actions";
-import Widgets from '../../components/widgets/Widgets'
-import AddWidget from '../../components/widgets/AddModal'
+import Widgets from './widgets';
+import AddWidget from './addWidget';
 
-class Dashboard extends Component {
+export default class Dashboard extends Component {
   render() {
     return (
       <Container className="dashboard">
@@ -14,17 +12,12 @@ class Dashboard extends Component {
           <Col>
             <div className="header">
               <h3>Team Dashboard</h3>
-              <AddWidget {...this.props} />
+              <AddWidget/>
             </div>
-            <Widgets {...this.props} />
+            <Widgets/>
           </Col>
         </Row>
       </Container>
     )
   }
 }
-
-export default connect(
-  ({ data }) => ({ ...data }),
-  { loadData, showUsersWidget, editWidget, changePosition }
-)(Dashboard)

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, ListGroup, ListGroupItem, DropdownItem } from 'reactstrap';
+import { Modal, ModalHeader } from 'reactstrap';
 
 import EditWidgetForm from './EditWidgetForm';
 

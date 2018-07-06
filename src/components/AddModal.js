@@ -1,11 +1,11 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, ListGroup, ListGroupItem } from 'reactstrap';
 
-import ActivityImg from '../../assets/users activity widget picture.png'
-import addImg from '../../assets/addwidget - icon.svg'
-import removeImg from '../../assets/Removewidget - icon.svg'
+import ActivityImg from '../assets/users activity widget picture.png'
+import addImg from '../assets/addwidget - icon.svg'
+import removeImg from '../assets/Removewidget - icon.svg'
 
-class AddWidget extends React.Component {
+class AddModal extends React.Component {
   state = {
     modal: false,
     showUsersWidget: undefined,
@@ -37,7 +37,9 @@ class AddWidget extends React.Component {
   render() {
     return (
       <div>
-        <Button className="add-widget-btn" color="primary" onClick={this.toggle}><img src={addImg}/>Add Widget</Button>
+        <Button className="add-widget-btn" color="primary" onClick={this.toggle}>
+          <img alt="Add Widget" src={addImg}/>Add Widget
+        </Button>
         <Modal size="lg" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Add a widget</ModalHeader>
           <ModalBody>
@@ -45,7 +47,7 @@ class AddWidget extends React.Component {
               <ListGroupItem>
                 <div className="addWidget">
                   <div className="activity-img">
-                    <img src={ActivityImg}/>
+                    <img alt="User's Activity" src={ActivityImg}/>
                   </div>
                   <div className="details">
                     <h6>User's Activity</h6>
@@ -55,8 +57,8 @@ class AddWidget extends React.Component {
                 </div>
                 {
                   this.state.addButtonVisible
-                    ? <Button className="add-widget-btn" color="primary" onClick={this.addUsersWidget}><img src={addImg}/>Add Widget</Button>
-                    : <Button color="danger" onClick={this.removeUsersWidget}><img src={removeImg}/>Remove Widget</Button>
+                    ? <Button className="add-widget-btn" color="primary" onClick={this.addUsersWidget}><img alt="Add Widget" src={addImg}/>Add Widget</Button>
+                    : <Button color="danger" onClick={this.removeUsersWidget}><img alt="Remove Widget" src={removeImg}/>Remove Widget</Button>
                 }
               </ListGroupItem>
             </ListGroup>
@@ -71,4 +73,4 @@ class AddWidget extends React.Component {
   }
 }
 
-export default AddWidget;
+export default AddModal;
