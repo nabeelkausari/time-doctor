@@ -4,9 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### `git clone https://github.com/nabeelkausari/time-doctor`
+### `git clone https://github.com/nabeelkausari/time-doctor.git`
 
-### `npm install`
+### `cd time-doctor && npm install`
 
 ### `npm start`
 
